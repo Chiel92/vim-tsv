@@ -22,4 +22,4 @@ if verbose:
 EOF
 endfunction
 
-au bufenter *.tsv call g:TsvDetectTabStop()
+au bufenter,bufwrite *.tsv call g:TsvDetectTabStop()
