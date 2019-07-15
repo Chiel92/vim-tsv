@@ -14,7 +14,7 @@ max_cell_width = 0
 if cells:
     max_cell_width = max([len(cell) for cell in cells])
 tabstop = max_cell_width + 1 or 20
-vim.command('set tabstop=' + str(tabstop))
+vim.command('setlocal tabstop=' + str(tabstop))
 
 verbose = bool(int(vim.eval('&verbose')))
 if verbose:
